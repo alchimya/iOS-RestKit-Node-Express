@@ -98,4 +98,18 @@ In the ViewController.m you can see the SDK in action
 - Back-end (see /spec/app): I developed some useful tests by using jasmine-node (https://github.com/mhevery/jasmine-node). You can execute tests by spec.command file or by executing the command 
 jasmine-node file_name-spec.js
 
+Example:
+```javascript
+describe('API GET',function(){
+
+    it("root server should respond with 500 status code", function(done) {
+        request(TestHelper().makeBaseUrl(), function (error, response, body) {
+            expect(response.statusCode).toBe(500);
+            done();
+        })
+    });
+
+});
+```
+
 - Front-end: TODO 
