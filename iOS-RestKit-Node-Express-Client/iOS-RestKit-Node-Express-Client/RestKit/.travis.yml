@@ -1,0 +1,7 @@
+language: objective-c
+rvm: 2.0.0
+install:
+    - bundle install
+    - bundle exec pod install
+script:
+    - bundle exec rake ci

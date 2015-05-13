@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBt-vs-IEv">
+                                <rect key="frame" x="16" y="20" width="240" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="EfT-9x-NcU"/>
+                                </constraints>
+                                <state key="normal" title="Test HTTP POST on /user/signin">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7cy-rl-rjk"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKH-bc-P7M">
+                                <rect key="frame" x="16" y="260" width="568" height="205"/>
+                                <color key="backgroundColor" red="1" green="0.99616919390000003" blue="0.75145447320000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Zeb-FM-WRW"/>
+                                </connections>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Server JSON Response" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhM-OY-bAX">
+                                <rect key="frame" x="16" y="236" width="182" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xM-2n-VQU">
+                                <rect key="frame" x="16" y="51" width="240" height="30"/>
+                                <state key="normal" title="Test HTTP GET on /customers">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testCustomers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Juj-r9-y6T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzW-mH-0Do">
+                                <rect key="frame" x="16" y="83" width="240" height="30"/>
+                                <state key="normal" title="Test HTTP GET on /customers/id">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testCustomerWithId:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JUm-Qc-NkJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deR-kw-iGF">
+                                <rect key="frame" x="16" y="150" width="240" height="30"/>
+                                <state key="normal" title="Test HTTP GET on /orders/id">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testOrderWithId:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ei8-Q3-qFF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnP-XZ-r6c">
+                                <rect key="frame" x="16" y="115" width="240" height="30"/>
+                                <state key="normal" title="Test HTTP GET on /orders">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testOrders:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YgQ-Ez-6TM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tnP-XZ-r6c" firstAttribute="top" secondItem="lzW-mH-0Do" secondAttribute="bottom" constant="2" id="03u-lc-iHo"/>
+                            <constraint firstItem="lzW-mH-0Do" firstAttribute="top" secondItem="2xM-2n-VQU" secondAttribute="bottom" constant="2" id="0sD-3V-Ga4"/>
+                            <constraint firstItem="deR-kw-iGF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5qg-3S-gmv"/>
+                            <constraint firstItem="EKH-bc-P7M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="A6V-Jh-TId"/>
+                            <constraint firstItem="JhM-OY-bAX" firstAttribute="top" secondItem="deR-kw-iGF" secondAttribute="bottom" constant="56" id="BYU-tn-sif"/>
+                            <constraint firstItem="deR-kw-iGF" firstAttribute="top" secondItem="tnP-XZ-r6c" secondAttribute="bottom" constant="5" id="Cvg-pm-FXM"/>
+                            <constraint firstItem="lzW-mH-0Do" firstAttribute="top" secondItem="2xM-2n-VQU" secondAttribute="bottom" constant="2" id="Dhb-6p-fG8"/>
+                            <constraint firstItem="deR-kw-iGF" firstAttribute="top" secondItem="tnP-XZ-r6c" secondAttribute="bottom" constant="5" id="ECZ-bK-hCR"/>
+                            <constraint firstItem="tnP-XZ-r6c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Esa-AQ-UfU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EKH-bc-P7M" secondAttribute="bottom" constant="135" id="Kpc-EI-YVs"/>
+                            <constraint firstItem="2xM-2n-VQU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LFp-tX-1oL"/>
+                            <constraint firstItem="JhM-OY-bAX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="TXK-R4-k9f"/>
+                            <constraint firstItem="EKH-bc-P7M" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Uav-Vm-5tm"/>
+                            <constraint firstItem="ZBt-vs-IEv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ud1-rg-CXn"/>
+                            <constraint firstItem="JhM-OY-bAX" firstAttribute="top" secondItem="deR-kw-iGF" secondAttribute="bottom" constant="56" id="Y2d-Uz-ml0"/>
+                            <constraint firstItem="tnP-XZ-r6c" firstAttribute="top" secondItem="lzW-mH-0Do" secondAttribute="bottom" constant="2" id="i7w-em-fBB"/>
+                            <constraint firstItem="EKH-bc-P7M" firstAttribute="top" secondItem="JhM-OY-bAX" secondAttribute="bottom" constant="3" id="kFN-4b-MhK"/>
+                            <constraint firstItem="lzW-mH-0Do" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mKl-T5-Jf2"/>
+                            <constraint firstAttribute="centerX" secondItem="EKH-bc-P7M" secondAttribute="centerX" id="nTr-lT-o8o"/>
+                            <constraint firstItem="EKH-bc-P7M" firstAttribute="top" secondItem="JhM-OY-bAX" secondAttribute="bottom" constant="3" id="rqg-MQ-Tj7"/>
+                            <constraint firstItem="ZBt-vs-IEv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wZo-1P-Nhw"/>
+                            <constraint firstItem="2xM-2n-VQU" firstAttribute="top" secondItem="ZBt-vs-IEv" secondAttribute="bottom" constant="1" id="zCJ-99-1pg"/>
+                            <constraint firstItem="2xM-2n-VQU" firstAttribute="top" secondItem="ZBt-vs-IEv" secondAttribute="bottom" constant="1" id="zwO-vI-3uZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtResponse" destination="EKH-bc-P7M" id="riO-jR-KT6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

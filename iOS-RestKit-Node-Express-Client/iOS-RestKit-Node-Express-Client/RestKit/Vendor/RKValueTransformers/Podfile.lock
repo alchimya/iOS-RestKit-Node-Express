@@ -1,0 +1,17 @@
+PODS:
+  - Expecta (0.3.1)
+  - RKValueTransformers (1.1.1)
+
+DEPENDENCIES:
+  - Expecta (~> 0.3.0)
+  - RKValueTransformers (from `.`)
+
+EXTERNAL SOURCES:
+  RKValueTransformers:
+    :path: .
+
+SPEC CHECKSUMS:
+  Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
+  RKValueTransformers: e9c86911f07f98f4b26b2fe1b4e290764e786d6e
+
+COCOAPODS: 0.35.0

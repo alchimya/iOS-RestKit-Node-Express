@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAA8E6801B020C77008424A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA8E67F1B020C77008424A2 /* main.m */; };
+		DAA8E6831B020C77008424A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA8E6821B020C77008424A2 /* AppDelegate.m */; };
+		DAA8E6861B020C77008424A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA8E6851B020C77008424A2 /* ViewController.m */; };
+		DAA8E6891B020C77008424A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA8E6871B020C77008424A2 /* Main.storyboard */; };
+		DAA8E68B1B020C77008424A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA8E68A1B020C77008424A2 /* Images.xcassets */; };
+		DAA8E68E1B020C77008424A2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA8E68C1B020C77008424A2 /* LaunchScreen.xib */; };
+		DAA8E69A1B020C77008424A2 /* iOS_RestKit_Node_Express_ClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA8E6991B020C77008424A2 /* iOS_RestKit_Node_Express_ClientTests.m */; };
+		DAD23DB21B024958009A0AA7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD23DB11B024958009A0AA7 /* CFNetwork.framework */; };
+		DAD23DB61B024A46009A0AA7 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD23DA51B02463A009A0AA7 /* libRestKit.a */; };
+		DAD23DB81B024A77009A0AA7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD23DB71B024A77009A0AA7 /* CoreData.framework */; };
+		DAD23DBA1B024A81009A0AA7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD23DB91B024A81009A0AA7 /* MobileCoreServices.framework */; };
+		DAD23DBC1B024A8B009A0AA7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD23DBB1B024A8B009A0AA7 /* Security.framework */; };
+		DAD23DBE1B024A96009A0AA7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD23DBD1B024A96009A0AA7 /* SystemConfiguration.framework */; };
+		DAD23DC91B024DCB009A0AA7 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD23DC81B024DCB009A0AA7 /* User.m */; };
+		DAD23DCC1B024DE4009A0AA7 /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD23DCB1B024DE4009A0AA7 /* Customer.m */; };
+		DAD23DCF1B024DEE009A0AA7 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD23DCE1B024DEE009A0AA7 /* Order.m */; };
+		DAD23DD21B024F45009A0AA7 /* RKHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD23DD11B024F45009A0AA7 /* RKHelper.m */; };
+		DAD23DD51B024F6A009A0AA7 /* Error.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD23DD41B024F6A009A0AA7 /* Error.m */; };
+		DAD23DD81B024FAC009A0AA7 /* UserHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD23DD71B024FAC009A0AA7 /* UserHelper.m */; };
+		DAD23DDB1B02504A009A0AA7 /* UserMap.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD23DDA1B02504A009A0AA7 /* UserMap.m */; };
+		DAD23DDE1B02526E009A0AA7 /* CustomerMap.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD23DDD1B02526E009A0AA7 /* CustomerMap.m */; };
+		DAD23DE11B0252E9009A0AA7 /* OrderMap.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD23DE01B0252E9009A0AA7 /* OrderMap.m */; };
+		DAD23DE41B025368009A0AA7 /* CustomerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD23DE31B025368009A0AA7 /* CustomerHelper.m */; };
+		DAD23DE71B025554009A0AA7 /* OrderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD23DE61B025554009A0AA7 /* OrderHelper.m */; };
+		DAD23DEB1B0256DF009A0AA7 /* HTTPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD23DEA1B0256DF009A0AA7 /* HTTPUser.m */; };
+		DAD23DF21B02581E009A0AA7 /* ErrorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD23DF11B02581E009A0AA7 /* ErrorHelper.m */; };
+		DAD23DF51B02589B009A0AA7 /* ErrorMap.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD23DF41B02589B009A0AA7 /* ErrorMap.m */; };
+		DAD23DFC1B025A94009A0AA7 /* L3SDKAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD23DF91B025A94009A0AA7 /* L3SDKAlertView.m */; };
+		DAD23DFD1B025A94009A0AA7 /* L3SDKWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD23DFB1B025A94009A0AA7 /* L3SDKWaitingView.m */; };
+		DAD23E011B026602009A0AA7 /* RESTSDKConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD23E001B026602009A0AA7 /* RESTSDKConfig.m */; };
+		DAD23E041B026667009A0AA7 /* RESTSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD23E031B026667009A0AA7 /* RESTSDK.m */; };
+		DAD23E081B02681D009A0AA7 /* L3SDKUtilityApp.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD23E071B02681D009A0AA7 /* L3SDKUtilityApp.m */; };
+		DAD23E0A1B0268D8009A0AA7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DAD23E091B0268D8009A0AA7 /* Settings.bundle */; };
+		DAD23E0D1B028957009A0AA7 /* HTTPCustomer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD23E0C1B028957009A0AA7 /* HTTPCustomer.m */; };
+		DAD23E101B029B49009A0AA7 /* HTTPOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD23E0F1B029B49009A0AA7 /* HTTPOrder.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAA8E6941B020C77008424A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAA8E6721B020C77008424A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAA8E6791B020C77008424A2;
+			remoteInfo = "iOS-RestKit-Node-Express-Client";
+		};
+		DAD23DA41B02463A009A0AA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD23D9D1B024639009A0AA7 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		DAD23DA61B02463A009A0AA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD23D9D1B024639009A0AA7 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		DAD23DA81B02463A009A0AA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD23D9D1B024639009A0AA7 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		DAD23DAA1B02463A009A0AA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD23D9D1B024639009A0AA7 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		DAD23DB41B024A37009A0AA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD23D9D1B024639009A0AA7 /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DAA8E67A1B020C77008424A2 /* iOS-RestKit-Node-Express-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-RestKit-Node-Express-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA8E67E1B020C77008424A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA8E67F1B020C77008424A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAA8E6811B020C77008424A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DAA8E6821B020C77008424A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DAA8E6841B020C77008424A2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DAA8E6851B020C77008424A2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DAA8E6881B020C77008424A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAA8E68A1B020C77008424A2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DAA8E68D1B020C77008424A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DAA8E6931B020C77008424A2 /* iOS-RestKit-Node-Express-ClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-RestKit-Node-Express-ClientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA8E6981B020C77008424A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA8E6991B020C77008424A2 /* iOS_RestKit_Node_Express_ClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_RestKit_Node_Express_ClientTests.m; sourceTree = "<group>"; };
+		DAD23D9D1B024639009A0AA7 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = "iOS-RestKit-Node-Express-Client/RestKit/RestKit.xcodeproj"; sourceTree = "<group>"; };
+		DAD23DB11B024958009A0AA7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DAD23DB71B024A77009A0AA7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DAD23DB91B024A81009A0AA7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DAD23DBB1B024A8B009A0AA7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DAD23DBD1B024A96009A0AA7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DAD23DC61B024D41009A0AA7 /* RESTRoutes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESTRoutes.h; sourceTree = "<group>"; };
+		DAD23DC71B024DCB009A0AA7 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		DAD23DC81B024DCB009A0AA7 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		DAD23DCA1B024DE4009A0AA7 /* Customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Customer.h; sourceTree = "<group>"; };
+		DAD23DCB1B024DE4009A0AA7 /* Customer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Customer.m; sourceTree = "<group>"; };
+		DAD23DCD1B024DEE009A0AA7 /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
+		DAD23DCE1B024DEE009A0AA7 /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
+		DAD23DD01B024F45009A0AA7 /* RKHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKHelper.h; sourceTree = "<group>"; };
+		DAD23DD11B024F45009A0AA7 /* RKHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKHelper.m; sourceTree = "<group>"; };
+		DAD23DD31B024F6A009A0AA7 /* Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Error.h; sourceTree = "<group>"; };
+		DAD23DD41B024F6A009A0AA7 /* Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Error.m; sourceTree = "<group>"; };
+		DAD23DD61B024FAC009A0AA7 /* UserHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserHelper.h; sourceTree = "<group>"; };
+		DAD23DD71B024FAC009A0AA7 /* UserHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserHelper.m; sourceTree = "<group>"; };
+		DAD23DD91B02504A009A0AA7 /* UserMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserMap.h; sourceTree = "<group>"; };
+		DAD23DDA1B02504A009A0AA7 /* UserMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserMap.m; sourceTree = "<group>"; };
+		DAD23DDC1B02526E009A0AA7 /* CustomerMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerMap.h; sourceTree = "<group>"; };
+		DAD23DDD1B02526E009A0AA7 /* CustomerMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerMap.m; sourceTree = "<group>"; };
+		DAD23DDF1B0252E9009A0AA7 /* OrderMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderMap.h; sourceTree = "<group>"; };
+		DAD23DE01B0252E9009A0AA7 /* OrderMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderMap.m; sourceTree = "<group>"; };
+		DAD23DE21B025368009A0AA7 /* CustomerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerHelper.h; sourceTree = "<group>"; };
+		DAD23DE31B025368009A0AA7 /* CustomerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerHelper.m; sourceTree = "<group>"; };
+		DAD23DE51B025554009A0AA7 /* OrderHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderHelper.h; sourceTree = "<group>"; };
+		DAD23DE61B025554009A0AA7 /* OrderHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderHelper.m; sourceTree = "<group>"; };
+		DAD23DE91B0256DF009A0AA7 /* HTTPUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPUser.h; sourceTree = "<group>"; };
+		DAD23DEA1B0256DF009A0AA7 /* HTTPUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPUser.m; sourceTree = "<group>"; };
+		DAD23DEF1B025782009A0AA7 /* HTTPRequestCallbackProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPRequestCallbackProtocol.h; sourceTree = "<group>"; };
+		DAD23DF01B02581E009A0AA7 /* ErrorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorHelper.h; sourceTree = "<group>"; };
+		DAD23DF11B02581E009A0AA7 /* ErrorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorHelper.m; sourceTree = "<group>"; };
+		DAD23DF31B02589B009A0AA7 /* ErrorMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorMap.h; sourceTree = "<group>"; };
+		DAD23DF41B02589B009A0AA7 /* ErrorMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorMap.m; sourceTree = "<group>"; };
+		DAD23DF81B025A94009A0AA7 /* L3SDKAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L3SDKAlertView.h; sourceTree = "<group>"; };
+		DAD23DF91B025A94009A0AA7 /* L3SDKAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L3SDKAlertView.m; sourceTree = "<group>"; };
+		DAD23DFA1B025A94009A0AA7 /* L3SDKWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L3SDKWaitingView.h; sourceTree = "<group>"; };
+		DAD23DFB1B025A94009A0AA7 /* L3SDKWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L3SDKWaitingView.m; sourceTree = "<group>"; };
+		DAD23DFF1B026602009A0AA7 /* RESTSDKConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTSDKConfig.h; sourceTree = "<group>"; };
+		DAD23E001B026602009A0AA7 /* RESTSDKConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTSDKConfig.m; sourceTree = "<group>"; };
+		DAD23E021B026667009A0AA7 /* RESTSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTSDK.h; sourceTree = "<group>"; };
+		DAD23E031B026667009A0AA7 /* RESTSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTSDK.m; sourceTree = "<group>"; };
+		DAD23E061B02681D009A0AA7 /* L3SDKUtilityApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L3SDKUtilityApp.h; sourceTree = "<group>"; };
+		DAD23E071B02681D009A0AA7 /* L3SDKUtilityApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L3SDKUtilityApp.m; sourceTree = "<group>"; };
+		DAD23E091B0268D8009A0AA7 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = Settings/Settings.bundle; sourceTree = "<group>"; };
+		DAD23E0B1B028957009A0AA7 /* HTTPCustomer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPCustomer.h; sourceTree = "<group>"; };
+		DAD23E0C1B028957009A0AA7 /* HTTPCustomer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPCustomer.m; sourceTree = "<group>"; };
+		DAD23E0E1B029B49009A0AA7 /* HTTPOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPOrder.h; sourceTree = "<group>"; };
+		DAD23E0F1B029B49009A0AA7 /* HTTPOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPOrder.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAA8E6771B020C77008424A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD23DBE1B024A96009A0AA7 /* SystemConfiguration.framework in Frameworks */,
+				DAD23DBC1B024A8B009A0AA7 /* Security.framework in Frameworks */,
+				DAD23DBA1B024A81009A0AA7 /* MobileCoreServices.framework in Frameworks */,
+				DAD23DB81B024A77009A0AA7 /* CoreData.framework in Frameworks */,
+				DAD23DB21B024958009A0AA7 /* CFNetwork.framework in Frameworks */,
+				DAD23DB61B024A46009A0AA7 /* libRestKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA8E6901B020C77008424A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAA8E6711B020C77008424A2 = {
+			isa = PBXGroup;
+			children = (
+				DAD23DBD1B024A96009A0AA7 /* SystemConfiguration.framework */,
+				DAD23DBB1B024A8B009A0AA7 /* Security.framework */,
+				DAD23DB91B024A81009A0AA7 /* MobileCoreServices.framework */,
+				DAD23DB71B024A77009A0AA7 /* CoreData.framework */,
+				DAD23DB11B024958009A0AA7 /* CFNetwork.framework */,
+				DAD23D9D1B024639009A0AA7 /* RestKit.xcodeproj */,
+				DAA8E67C1B020C77008424A2 /* iOS-RestKit-Node-Express-Client */,
+				DAA8E6961B020C77008424A2 /* iOS-RestKit-Node-Express-ClientTests */,
+				DAA8E67B1B020C77008424A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAA8E67B1B020C77008424A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAA8E67A1B020C77008424A2 /* iOS-RestKit-Node-Express-Client.app */,
+				DAA8E6931B020C77008424A2 /* iOS-RestKit-Node-Express-ClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAA8E67C1B020C77008424A2 /* iOS-RestKit-Node-Express-Client */ = {
+			isa = PBXGroup;
+			children = (
+				DAD23DF61B025A94009A0AA7 /* L3SDK */,
+				DAD23DBF1B024C4E009A0AA7 /* RESTSDK */,
+				DAA8E6811B020C77008424A2 /* AppDelegate.h */,
+				DAA8E6821B020C77008424A2 /* AppDelegate.m */,
+				DAA8E6841B020C77008424A2 /* ViewController.h */,
+				DAA8E6851B020C77008424A2 /* ViewController.m */,
+				DAA8E6871B020C77008424A2 /* Main.storyboard */,
+				DAA8E68A1B020C77008424A2 /* Images.xcassets */,
+				DAA8E68C1B020C77008424A2 /* LaunchScreen.xib */,
+				DAA8E67D1B020C77008424A2 /* Supporting Files */,
+			);
+			path = "iOS-RestKit-Node-Express-Client";
+			sourceTree = "<group>";
+		};
+		DAA8E67D1B020C77008424A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAD23E091B0268D8009A0AA7 /* Settings.bundle */,
+				DAA8E67E1B020C77008424A2 /* Info.plist */,
+				DAA8E67F1B020C77008424A2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAA8E6961B020C77008424A2 /* iOS-RestKit-Node-Express-ClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAA8E6991B020C77008424A2 /* iOS_RestKit_Node_Express_ClientTests.m */,
+				DAA8E6971B020C77008424A2 /* Supporting Files */,
+			);
+			path = "iOS-RestKit-Node-Express-ClientTests";
+			sourceTree = "<group>";
+		};
+		DAA8E6971B020C77008424A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAA8E6981B020C77008424A2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAD23D9E1B024639009A0AA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAD23DA51B02463A009A0AA7 /* libRestKit.a */,
+				DAD23DA71B02463A009A0AA7 /* RestKitTests.xctest */,
+				DAD23DA91B02463A009A0AA7 /* RestKit.framework */,
+				DAD23DAB1B02463A009A0AA7 /* RestKitFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAD23DBF1B024C4E009A0AA7 /* RESTSDK */ = {
+			isa = PBXGroup;
+			children = (
+				DAD23DFE1B0265DB009A0AA7 /* Config */,
+				DAD23DC51B024D20009A0AA7 /* Const */,
+				DAD23DC11B024CC5009A0AA7 /* Entities */,
+				DAD23DC31B024CC5009A0AA7 /* Mappings */,
+				DAD23DC21B024CC5009A0AA7 /* Helpers */,
+				DAD23DE81B025686009A0AA7 /* HTTPRequests */,
+			);
+			path = RESTSDK;
+			sourceTree = "<group>";
+		};
+		DAD23DC11B024CC5009A0AA7 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DAD23DC71B024DCB009A0AA7 /* User.h */,
+				DAD23DC81B024DCB009A0AA7 /* User.m */,
+				DAD23DCA1B024DE4009A0AA7 /* Customer.h */,
+				DAD23DCB1B024DE4009A0AA7 /* Customer.m */,
+				DAD23DCD1B024DEE009A0AA7 /* Order.h */,
+				DAD23DCE1B024DEE009A0AA7 /* Order.m */,
+				DAD23DD31B024F6A009A0AA7 /* Error.h */,
+				DAD23DD41B024F6A009A0AA7 /* Error.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		DAD23DC21B024CC5009A0AA7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DAD23DD01B024F45009A0AA7 /* RKHelper.h */,
+				DAD23DD11B024F45009A0AA7 /* RKHelper.m */,
+				DAD23DD61B024FAC009A0AA7 /* UserHelper.h */,
+				DAD23DD71B024FAC009A0AA7 /* UserHelper.m */,
+				DAD23DE21B025368009A0AA7 /* CustomerHelper.h */,
+				DAD23DE31B025368009A0AA7 /* CustomerHelper.m */,
+				DAD23DE51B025554009A0AA7 /* OrderHelper.h */,
+				DAD23DE61B025554009A0AA7 /* OrderHelper.m */,
+				DAD23DF01B02581E009A0AA7 /* ErrorHelper.h */,
+				DAD23DF11B02581E009A0AA7 /* ErrorHelper.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DAD23DC31B024CC5009A0AA7 /* Mappings */ = {
+			isa = PBXGroup;
+			children = (
+				DAD23DD91B02504A009A0AA7 /* UserMap.h */,
+				DAD23DDA1B02504A009A0AA7 /* UserMap.m */,
+				DAD23DDC1B02526E009A0AA7 /* CustomerMap.h */,
+				DAD23DDD1B02526E009A0AA7 /* CustomerMap.m */,
+				DAD23DDF1B0252E9009A0AA7 /* OrderMap.h */,
+				DAD23DE01B0252E9009A0AA7 /* OrderMap.m */,
+				DAD23DF31B02589B009A0AA7 /* ErrorMap.h */,
+				DAD23DF41B02589B009A0AA7 /* ErrorMap.m */,
+			);
+			path = Mappings;
+			sourceTree = "<group>";
+		};
+		DAD23DC51B024D20009A0AA7 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				DAD23DC61B024D41009A0AA7 /* RESTRoutes.h */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		DAD23DE81B025686009A0AA7 /* HTTPRequests */ = {
+			isa = PBXGroup;
+			children = (
+				DAD23DEF1B025782009A0AA7 /* HTTPRequestCallbackProtocol.h */,
+				DAD23DE91B0256DF009A0AA7 /* HTTPUser.h */,
+				DAD23DEA1B0256DF009A0AA7 /* HTTPUser.m */,
+				DAD23E0B1B028957009A0AA7 /* HTTPCustomer.h */,
+				DAD23E0C1B028957009A0AA7 /* HTTPCustomer.m */,
+				DAD23E0E1B029B49009A0AA7 /* HTTPOrder.h */,
+				DAD23E0F1B029B49009A0AA7 /* HTTPOrder.m */,
+			);
+			path = HTTPRequests;
+			sourceTree = "<group>";
+		};
+		DAD23DF61B025A94009A0AA7 /* L3SDK */ = {
+			isa = PBXGroup;
+			children = (
+				DAD23E051B02681D009A0AA7 /* Utility */,
+				DAD23DF71B025A94009A0AA7 /* Extensions */,
+			);
+			path = L3SDK;
+			sourceTree = "<group>";
+		};
+		DAD23DF71B025A94009A0AA7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DAD23DF81B025A94009A0AA7 /* L3SDKAlertView.h */,
+				DAD23DF91B025A94009A0AA7 /* L3SDKAlertView.m */,
+				DAD23DFA1B025A94009A0AA7 /* L3SDKWaitingView.h */,
+				DAD23DFB1B025A94009A0AA7 /* L3SDKWaitingView.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DAD23DFE1B0265DB009A0AA7 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DAD23DFF1B026602009A0AA7 /* RESTSDKConfig.h */,
+				DAD23E001B026602009A0AA7 /* RESTSDKConfig.m */,
+				DAD23E021B026667009A0AA7 /* RESTSDK.h */,
+				DAD23E031B026667009A0AA7 /* RESTSDK.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		DAD23E051B02681D009A0AA7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				DAD23E061B02681D009A0AA7 /* L3SDKUtilityApp.h */,
+				DAD23E071B02681D009A0AA7 /* L3SDKUtilityApp.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAA8E6791B020C77008424A2 /* iOS-RestKit-Node-Express-Client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA8E69D1B020C77008424A2 /* Build configuration list for PBXNativeTarget "iOS-RestKit-Node-Express-Client" */;
+			buildPhases = (
+				DAA8E6761B020C77008424A2 /* Sources */,
+				DAA8E6771B020C77008424A2 /* Frameworks */,
+				DAA8E6781B020C77008424A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAD23DB51B024A37009A0AA7 /* PBXTargetDependency */,
+			);
+			name = "iOS-RestKit-Node-Express-Client";
+			productName = "iOS-RestKit-Node-Express-Client";
+			productReference = DAA8E67A1B020C77008424A2 /* iOS-RestKit-Node-Express-Client.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAA8E6921B020C77008424A2 /* iOS-RestKit-Node-Express-ClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA8E6A01B020C77008424A2 /* Build configuration list for PBXNativeTarget "iOS-RestKit-Node-Express-ClientTests" */;
+			buildPhases = (
+				DAA8E68F1B020C77008424A2 /* Sources */,
+				DAA8E6901B020C77008424A2 /* Frameworks */,
+				DAA8E6911B020C77008424A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAA8E6951B020C77008424A2 /* PBXTargetDependency */,
+			);
+			name = "iOS-RestKit-Node-Express-ClientTests";
+			productName = "iOS-RestKit-Node-Express-ClientTests";
+			productReference = DAA8E6931B020C77008424A2 /* iOS-RestKit-Node-Express-ClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAA8E6721B020C77008424A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = DomenicoVacchiano;
+				TargetAttributes = {
+					DAA8E6791B020C77008424A2 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					DAA8E6921B020C77008424A2 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = DAA8E6791B020C77008424A2;
+					};
+				};
+			};
+			buildConfigurationList = DAA8E6751B020C77008424A2 /* Build configuration list for PBXProject "iOS-RestKit-Node-Express-Client" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAA8E6711B020C77008424A2;
+			productRefGroup = DAA8E67B1B020C77008424A2 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DAD23D9E1B024639009A0AA7 /* Products */;
+					ProjectRef = DAD23D9D1B024639009A0AA7 /* RestKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				DAA8E6791B020C77008424A2 /* iOS-RestKit-Node-Express-Client */,
+				DAA8E6921B020C77008424A2 /* iOS-RestKit-Node-Express-ClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DAD23DA51B02463A009A0AA7 /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = DAD23DA41B02463A009A0AA7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DAD23DA71B02463A009A0AA7 /* RestKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.xctest;
+			remoteRef = DAD23DA61B02463A009A0AA7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DAD23DA91B02463A009A0AA7 /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = DAD23DA81B02463A009A0AA7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DAD23DAB1B02463A009A0AA7 /* RestKitFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.xctest;
+			remoteRef = DAD23DAA1B02463A009A0AA7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAA8E6781B020C77008424A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD23E0A1B0268D8009A0AA7 /* Settings.bundle in Resources */,
+				DAA8E6891B020C77008424A2 /* Main.storyboard in Resources */,
+				DAA8E68E1B020C77008424A2 /* LaunchScreen.xib in Resources */,
+				DAA8E68B1B020C77008424A2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA8E6911B020C77008424A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAA8E6761B020C77008424A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD23E041B026667009A0AA7 /* RESTSDK.m in Sources */,
+				DAD23DCF1B024DEE009A0AA7 /* Order.m in Sources */,
+				DAD23DE41B025368009A0AA7 /* CustomerHelper.m in Sources */,
+				DAD23DF21B02581E009A0AA7 /* ErrorHelper.m in Sources */,
+				DAD23DFC1B025A94009A0AA7 /* L3SDKAlertView.m in Sources */,
+				DAD23DE71B025554009A0AA7 /* OrderHelper.m in Sources */,
+				DAD23DD21B024F45009A0AA7 /* RKHelper.m in Sources */,
+				DAD23DC91B024DCB009A0AA7 /* User.m in Sources */,
+				DAD23E0D1B028957009A0AA7 /* HTTPCustomer.m in Sources */,
+				DAD23E081B02681D009A0AA7 /* L3SDKUtilityApp.m in Sources */,
+				DAD23DF51B02589B009A0AA7 /* ErrorMap.m in Sources */,
+				DAD23DEB1B0256DF009A0AA7 /* HTTPUser.m in Sources */,
+				DAD23DE11B0252E9009A0AA7 /* OrderMap.m in Sources */,
+				DAA8E6861B020C77008424A2 /* ViewController.m in Sources */,
+				DAD23DD51B024F6A009A0AA7 /* Error.m in Sources */,
+				DAA8E6831B020C77008424A2 /* AppDelegate.m in Sources */,
+				DAD23DD81B024FAC009A0AA7 /* UserHelper.m in Sources */,
+				DAA8E6801B020C77008424A2 /* main.m in Sources */,
+				DAD23DCC1B024DE4009A0AA7 /* Customer.m in Sources */,
+				DAD23E011B026602009A0AA7 /* RESTSDKConfig.m in Sources */,
+				DAD23DFD1B025A94009A0AA7 /* L3SDKWaitingView.m in Sources */,
+				DAD23DDE1B02526E009A0AA7 /* CustomerMap.m in Sources */,
+				DAD23E101B029B49009A0AA7 /* HTTPOrder.m in Sources */,
+				DAD23DDB1B02504A009A0AA7 /* UserMap.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA8E68F1B020C77008424A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA8E69A1B020C77008424A2 /* iOS_RestKit_Node_Express_ClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAA8E6951B020C77008424A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAA8E6791B020C77008424A2 /* iOS-RestKit-Node-Express-Client */;
+			targetProxy = DAA8E6941B020C77008424A2 /* PBXContainerItemProxy */;
+		};
+		DAD23DB51B024A37009A0AA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = DAD23DB41B024A37009A0AA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAA8E6871B020C77008424A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAA8E6881B020C77008424A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAA8E68C1B020C77008424A2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAA8E68D1B020C77008424A2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAA8E69B1B020C77008424A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAA8E69C1B020C77008424A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAA8E69E1B020C77008424A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "iOS-RestKit-Node-Express-Client/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/iOS-RestKit-Node-Express-Client";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DAA8E69F1B020C77008424A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "iOS-RestKit-Node-Express-Client/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/iOS-RestKit-Node-Express-Client";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DAA8E6A11B020C77008424A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOS-RestKit-Node-Express-ClientTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-RestKit-Node-Express-Client.app/iOS-RestKit-Node-Express-Client";
+			};
+			name = Debug;
+		};
+		DAA8E6A21B020C77008424A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOS-RestKit-Node-Express-ClientTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-RestKit-Node-Express-Client.app/iOS-RestKit-Node-Express-Client";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAA8E6751B020C77008424A2 /* Build configuration list for PBXProject "iOS-RestKit-Node-Express-Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA8E69B1B020C77008424A2 /* Debug */,
+				DAA8E69C1B020C77008424A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAA8E69D1B020C77008424A2 /* Build configuration list for PBXNativeTarget "iOS-RestKit-Node-Express-Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA8E69E1B020C77008424A2 /* Debug */,
+				DAA8E69F1B020C77008424A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAA8E6A01B020C77008424A2 /* Build configuration list for PBXNativeTarget "iOS-RestKit-Node-Express-ClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA8E6A11B020C77008424A2 /* Debug */,
+				DAA8E6A21B020C77008424A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAA8E6721B020C77008424A2 /* Project object */;
+}
