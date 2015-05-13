@@ -95,7 +95,7 @@ In the ViewController.m you can see the SDK in action
 
 # Tests
 
-- Back-end (see /spec/app): I developed some useful tests by using jasmine-node (https://github.com/mhevery/jasmine-node). You can execute tests by spec.command file or by executing the command 
+- <b>Back-end</b> (see /spec/app): I developed some useful tests by using jasmine-node (https://github.com/mhevery/jasmine-node). You can execute tests by spec.command file or by executing the command 
 jasmine-node file_name-spec.js
 
 Example:
@@ -113,4 +113,4 @@ describe('API GET',function(){
 });
 ```
 
-- Front-end: TODO 
+- <b>Front-end</b>: TODO 
