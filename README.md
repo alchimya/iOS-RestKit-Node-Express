@@ -101,14 +101,15 @@ jasmine-node file_name-spec.js
 Example:
 ```javascript
 describe('API GET',function(){
-
-    it("root server should respond with 500 status code", function(done) {
-        request(TestHelper().makeBaseUrl(), function (error, response, body) {
-            expect(response.statusCode).toBe(500);
+    it("user/signin should respond with 500 status code", function(done) {
+        request({
+            url: TestHelper().makeBasicAuthUrl('user/signin'),
+            method: 'GET'
+        }, function(error, response, body){
+            expect(response.statusCode).toBe(404);
             done();
-        })
+        });
     });
-
 });
 ```
 
