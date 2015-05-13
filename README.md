@@ -1,7 +1,7 @@
 # iOS-RestKit-Node-Express
 An iOS app to demonstrate how to use RestKit request/response with REST web services developed with ExpressJS
 
-#Backend installation
+#Back-end installation
 
 - cd iOS-RestKit-Node-Express-Server
 - sudo npm install 
@@ -95,7 +95,7 @@ In the ViewController.m you can see the SDK in action
 
 # Tests
 
-- Backend (see /spec/app): I developed some useful tests by using jasmine-node (https://github.com/mhevery/jasmine-node). You can execute tests by spec.command file or by executing the command 
+- Back-end (see /spec/app): I developed some useful tests by using jasmine-node (https://github.com/mhevery/jasmine-node). You can execute tests by spec.command file or by executing the command 
 jasmine-node file_name-spec.js
 
-- Frontend: TODO 
+- Front-end: TODO 
