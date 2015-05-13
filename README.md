@@ -17,7 +17,7 @@ Server will start on the port 8000. To change this port see \app\modules\config.
 
 ![ScreenShot](https://raw.github.com/alchimya/iOS-RestKit-Node-Express/master/screenshots/iOS-RestKit-Node-Express.gif)
 
-# Back-end Node/Espress JS
+# Back-end Node/Express JS
 The backend consists of a Node/ExpressJS application that implements a basic authentication (see \app\modules\basic-auth-security.js).
 I developed three different resources, with different routing paths (see app/api/index.js)
 
