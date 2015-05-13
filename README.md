@@ -21,7 +21,7 @@ Server will start on the port 8000. To change this port see \app\modules\config.
 The backend consists of a Node/ExpressJS application that implements a basic authentication (see \app\modules\basic-auth-security.js).
 I developed three different resources, with different routing paths (see app/api/index.js)
 
-- /user/signin
+- <b>/user/signin</b>
 it implements a POST method to emulate a login function. It will expect to receive in the body request a JSON object with this structure
 ```javascript
 {
@@ -40,7 +40,7 @@ It will respond with a JSON object (see app/entities/user.js) with this structur
   }
 }
 ```
--/customers
+- <b>/customers</b>
 it implements a GET method to emulate a loading data operation. 
 It will respond with an array of JSON objects (see app/entities/customer.js) with this structure:
 ```javascript
@@ -67,7 +67,7 @@ It will respond with an array of JSON objects (see app/entities/customer.js) wit
 ]
 }
 ```
--/customers/:id
+- <b>/customers/:id</b>
 it implements a GET method to emulate loading data operation with an id.  It will expect to receive a valid value in the url path (eg./customers/10001)
 It will respond with a JSON object (see app/entities/customer.js) with this structure:
 ```javascript
@@ -80,10 +80,10 @@ It will respond with a JSON object (see app/entities/customer.js) with this stru
 	}
 }
 ```
-/orders
+- <b>/orders</b>
 it has the same behaviour of /customers
 
-/orders/:id
+- <b>/orders/:id</b>
 it has the same behaviour of /customers/:id
 
 # Frontend iOS
