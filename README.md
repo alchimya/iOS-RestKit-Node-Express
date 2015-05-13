@@ -101,7 +101,7 @@ jasmine-node file_name-spec.js
 Example:
 ```javascript
 describe('API GET',function(){
-    it("user/signin should respond with 500 status code", function(done) {
+    it("user/signin should respond with 404 status code", function(done) {
         request({
             url: TestHelper().makeBasicAuthUrl('user/signin'),
             method: 'GET'
