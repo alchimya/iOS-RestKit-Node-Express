@@ -47,8 +47,8 @@ It will respond with an array of JSON objects (see app/entities/customer.js) wit
 {
 "customers": [
 	{
-		"firstName": “fName”,
-		"lastName": “lNam”,
+		"firstName": "fName",
+		"lastName": "lNam",
 		"email": "info@domain.com",
 		"id": "100001"
 	},
