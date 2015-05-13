@@ -1,5 +1,5 @@
 # iOS-RestKit-Node-Express
-An iOS app to demonstrate how to use RestKit request/response with a REST web services developed with ExpressJS
+An iOS app to demonstrate how to use RestKit request/response with REST web services developed with ExpressJS
 
 #Backend installation
 
