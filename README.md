@@ -88,14 +88,14 @@ it has the same behaviour of /customers/:id
 
 # Front-end iOS
 
-The fronted consists of an iOS app that consume REST resources by using RestKit (https://github.com/RestKit/RestKit).
+The fronted consists of an iOS app that consumes REST resources by using RestKit (https://github.com/RestKit/RestKit).
 I developed an “SDK” (see RESTSDK folder) that you can use and extend with new classes to interact with a REST backed.
 To configure the REST “gateway” connection see the AppDelegate.m file.
 In the ViewController.m you can see the SDK in action
 
 # Tests
 
-- <b>Back-end</b> (see /spec/app): I developed some useful tests by using jasmine-node (https://github.com/mhevery/jasmine-node). You can execute tests by spec.command file or by executing the command 
+- <b>Back-end</b> (see /spec/api): I developed some useful tests by using jasmine-node (https://github.com/mhevery/jasmine-node). You can execute tests by spec.command file or by executing the command 
 jasmine-node file_name-spec.js
 
 Example:
